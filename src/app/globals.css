@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #0A6FDA;
+    --accent: #00B3FE;
+    --secondary: #16A91C;
+    --deep-green: #00721D;
+    --text-dark: #161616;
+    --soft-bg: #F2F8FF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--text-dark);
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #161616;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism utility */
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Pause marquee on hover */
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
