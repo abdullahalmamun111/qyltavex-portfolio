@@ -24,9 +24,12 @@ export const metadata: Metadata = {
     "Digital Marketing",
   ],
   icons: {
-    icon: "/favicon.jpeg",
-    shortcut: "/favicon.jpeg",
-    apple: "/favicon.jpeg",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
